@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="family manager website">
+        <meta name="author" content="Melvin Agustin">
+        <meta name="keyword" content="family manager,website for family">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="listpage.css">
+        <link rel="stylesheet" href="report-page.css">
+    <title>My Family Manager List Page</title>
+</head>
+<body onscroll="stick()">
+    <header class="header">
+		<h1>Family List</h1>
+	</header>
+	<div id="d"></div>
+	<!--nav-->
+	<nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fs-2">Reports</a>
+            <button class="navbar-toggler btn btn-sm" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-4" id="navbar-menu">
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="../Home page/Myfamilymanager_homepages.html.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../List Page/listpage.html" class="nav-link">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Report Page/report-page.html" class="nav-link">Reports</a>
+                    </li>
+                    <div class="dropdown navbar-dropdown">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-bs-target="#nav-dropdown">Options</a>
+                        <ul class="dropdown-menu bg-dark text-light">
+                            <li class="dropdown-item">
+                                <a href="" class="nav-link">About Us</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="" class="nav-link">Help</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"class="nav-link">Language</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav-link">Privacy/policy</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item">
+                                <a href="../Sign up Page/sign_in-sign-up.html" class="nav-link">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+    <div id="container-all">
+        <h3>Add Reports</h3>
+        <div id="container">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="form-group" id="my-form">
+                        <label class="fs-3">Add Info</label>
+                        <textarea id="text-area" class="input form-control form-control-lg" rows="4" cols="50" placeholder="Enter reports..."></textarea>
+                        <small clas="form-text text-muted">Enter reports</small>
+                        <br>
+                        <!-- <label for="">Set when to remove(optional)</label>
+                        <input type="time" id="date" class="input" > -->
+                        <button id="submit" class="btn btn-outline-success btn-lg">Add</button>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div id="a-and-r-container">
+            <div class="h3-container">
+                <h3>Reports</h3>
+             </div>
+             <div id="actions">  
+
+                <button id="clear-all" class="btn btn-danger">Clear All</button>
+            </div> 
+            <div id="reports-area">
+                <span id="msg">No Report To Show...</span>
+                <ul id="reports">
+                    <!-- <li class="report">Report 1 <button class="del">X</button></li>
+                    <li class="report">Report 2 <button class="del">X</button></li>
+                    <li class="report">Report 3 <button class="del">X</button></li>
+                    <li class="report">Report 4 <button class="del">X</button></li> -->
+                </ul>
+            </div>     
+        </div>     
+    </div>
+    <footer>
+		<div>	
+			<h2>Contact Us</h2>
+			<ul>
+				<li>Facebook: <b>Melvin Agustin</b></li>
+				<li>Contact Number: <b>09664525291</b></li>
+				<li>email: <b>agustinarsenio122@gmail.com</b></li>
+			</ul>
+		</div>
+		<div>
+			<p>Coyright &copy; 2022 ww.myfamilymanager.com</p>
+		</div>	
+	</footer>
+    <!--BOOTSTRAP AREA-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="Main.js.js"></script>
+</body>
+</html>

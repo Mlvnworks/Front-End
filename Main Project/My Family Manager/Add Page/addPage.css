@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* links */
+a{
+    color:white;
+    text-decoration:none ;
+}
+a:hover{
+    color:gray;
+}
+
+/* header */
+header{
+	background-color: rgb(75, 124, 75);
+	padding:8px;
+	margin: 0;
+	
+	
+	
+}
+header h1{
+	margin: 0;
+	margin-left: 25px;
+	color: black;
+	font-weight: bolder;
+	
+}
+/* nav area */
+nav li{
+	list-style: none;
+	display: inline;
+	font-size: 30px;
+	padding-right: 20px;
+	color:white;
+	
+	
+}
+nav{
+	background-color: rgba(0, 0, 0, 0.796);
+	
+	margin: 0;
+	padding: 10px;
+	
+}
+/* form-area */
+form h1{
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.796);
+    margin-top: 0;
+    color:white;
+    padding:10px 0;
+}
+form{
+    width:95%;
+    margin:50px 2.5% 10px 2.5%;
+    /* border:1px black solid; */
+    background-color:lightgray;
+    border-radius: 10px;
+    
+
+}
+
+.inputs{
+    margin: 20px 10px 5px 10px;
+    box-shadow: inset 10px 10px 7px white,
+                10px 10px 7px rgba(0, 0, 0, 0.349);
+    padding-top:25px;
+    padding-bottom:25px;
+   
+    background-color: white;
+    border-radius:20px;
+    
+    
+
+}
+.inputs input{
+    padding: 10px 25px;
+    margin:20px 0px;
+    font-size: 20px;
+}
+.inputs label{
+    font-size: 20px;
+}
+
+#submit{
+    display:block;
+   width:40%;
+   margin:10px 30%;
+   font-size: large;
+   font-weight: bold;
+   background-color: rgb(61, 124, 61);
+   color:lightgray;
+   border:1px black solid;
+   box-sizing: border-box;
+   
+}
+#submit:hover{
+    background-color: rgba(61, 124, 61, 0.562);
+    color:black;
+    
+
+
+
+}
+.inputs select{
+    padding : 10px 25px;
+    font-size: 20px;
+}
+/* footer */
+
+footer{
+	position: absolute;
+	bottom:0;
+	border: 1px black solid;
+	background-color: rgba(0, 0, 0, 0.364);
+	bottom: 0;
+	width: 100%;
+
+}
+footer h2{
+	margin-left:50px;
+
+	
+}
+footer li{
+	margin-left: 90px;
+}
+footer p{
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.357);
+	color:black;
+	margin: 0;
+
+}
+/* media */
+@media(max-height:1060px){
+	footer{
+		position: static;
+	}
+
+}
+/* end */
+/* media */
+@media(max-width:1060px){
+    .inputs label,.inputs input, .inputs select {
+        display: block;
+        width: 70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+
+}

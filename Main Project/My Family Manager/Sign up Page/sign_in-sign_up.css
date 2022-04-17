@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding:0;
+	background-color: lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+
+}
+/* links */
+a{
+	
+	text-decoration: none;
+
+}
+a:hover{
+	color:rgba(0, 0, 255, 0.549);
+
+}
+a:active{
+	color:blue;
+}
+
+
+
+/* header */
+header{
+	background-color: rgb(75, 124, 75);
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-bottom:10px black solid;
+	margin-bottom:80px;
+	
+	
+	
+
+}
+header h1{
+	margin-left:80px;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+
+}
+/* input area */
+form{
+	position:relative;
+	background-color: white;
+	width: 70%;
+	margin:20px 15% 50px 15%;
+	padding:20px;
+	text-align: center;
+	font-weight: 500;
+	border-radius: 10px;
+	box-shadow: inset 15px 15px 12px white,
+					15px 15px 12px rgba(0, 0, 0, 0.398);
+	
+}
+form label{
+	display: block;
+	font-size:23px;
+
+	
+
+}
+
+.form-submit{
+	padding: 10px;
+	border: 1px black solid;
+	border-radius: 9px;
+	background-color: rgba(0, 0, 0, 0.816);
+	color:white;
+
+}
+.form-submit a{
+	color: white;
+}
+.form-submit:hover{
+	background-color: rgba(0, 0, 0, 0.487);
+	color:white;
+
+}
+p{
+	text-decoration: underline;
+}
+#pword-toggle{
+	position:absolute;
+	font-size: 20px;
+	right:20px;
+	top:39%;
+	border:none;
+	background-color: rgba(255, 255, 255, 0);
+
+	
+}
+#email{
+	border:1px skyblue solid;
+}
+#password{
+	border:1px skyblue solid;
+}
+/* footer */
+
+footer{
+	margin-top:200px;
+	bottom:0;
+	border: 1px black solid;
+	background-color: rgba(0, 0, 0, 0.364);
+	bottom: 0;
+	width: 100%;
+
+}
+footer h2{
+	margin-left:50px;
+
+	
+}
+footer li{
+	margin-left: 90px;
+}
+footer p{
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.357);
+	color:black;
+	margin: 0;
+
+}
+
+
+#log-con a{
+	color:white;
+}
+/* media */
+@media(max-width:600px){
+
+}
+@media(max-height:650px){
+	
+	footer{
+		position: static;
+	}
+
+}
+/* end */

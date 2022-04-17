@@ -1,0 +1,154 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* links */
+a{
+	color:white;
+	text-decoration: none;
+}
+a:hover{
+	color:rgba(211, 211, 211, 0.618);
+}
+/* header */
+header{
+	background-color: rgb(75, 124, 75);
+	padding:8px;
+	margin: 0;
+	
+	
+	
+}
+header h1{
+	margin: 0;
+	margin-left: 25px;
+	color: black;
+	font-weight: bolder;
+	
+}
+/* nav area */
+nav li{
+	list-style: none;
+	display: inline;
+	font-size: 30px;
+	padding-right: 20px;
+	color:white;
+	
+	
+}
+nav{
+	background-color: rgba(0, 0, 0, 0.796);
+	
+	margin: 0;
+	padding: 10px;
+	
+}
+/* img and info */
+.upper{
+	background-color: white;
+	box-shadow: inset 15px 5px 12px white,
+					15px 15px 12px rgba(0, 0, 0, 0.35);
+	width:80%;
+	align-self: center;
+	border-radius:10px;
+	margin:10px 10% 10px 10%;
+	padding: 15px;
+	
+	
+}
+#info-area{
+	width: 600px;
+	margin: auto;
+}
+/* skills and achievements container */
+
+
+#sna-container{
+	border:1px black solid;
+	width: 90%;
+	margin:20px 5% 10px 5%;
+	background-color:white;
+	line-height: 1.6em;
+	font-size: 17px;
+	border-radius: 10px;
+}
+#sna-container h2{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.686);
+	margin-top: 0;
+}
+/* favorites */
+.color{
+	background-color: white;
+	float:left;
+	width: 45%;
+	border:1px black solid;
+	box-sizing:border-box;
+	height: 160px;
+	margin-right:0;
+	margin-left:5%;
+	font-size: 17px;
+	border-radius:10px;
+	
+	
+}	
+.color h2 ,.number h2{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.686);
+	margin-top:0;
+}
+.number{
+	background-color: white;
+	float:right;
+	width: 45%;
+	border:1px black solid;
+	box-sizing: border-box;
+	height: 160px;
+	margin-left: 0;
+	margin-right: 5%;
+	font-size: 17px;
+	border-radius: 10px;
+	
+}
+@media(max-width:600px){
+	.number, .color{
+		float:none;
+		width: 90%;
+		margin:10px 5% 10px 5%;
+		
+	
+}
+
+}
+.clear{
+	clear:both;
+}
+/* footer */
+footer{
+	border-top:1px black solid;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.364);
+}
+footer h2{
+	margin-left: 50px;
+}
+footer li{
+	margin-left: 90px;
+}
+footer p{
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.357);
+	color:black;
+	margin: 0;
+
+}
+
+
+
+
+
+
+	
+

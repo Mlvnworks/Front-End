@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+/* links */
+/* a{
+    color:white;
+    text-decoration:none ;
+}
+a:hover{
+    color:gray;
+} */
+
+/* header */
+header{
+	background-color: rgb(75, 124, 75);
+	padding:8px;
+	margin: 0;
+	
+	
+	
+}
+header h1{
+	margin: 0;
+	margin-left: 25px;
+	color: black;
+	font-weight: bolder;
+	
+}
+/* nav area */
+.dropdown-menu li:hover{
+    background-color: black;
+}
+/* CONTAINER ALL */
+#container-all{
+    width:90%;
+    margin:80px 5%;
+    border: 1px black solid;
+    background-color: white;   
+    border-radius:20px; 
+}
+#container-all > h3{
+    background-color: rgba(0, 0, 0, 0.796);
+	color: white;
+	margin: 0;
+	padding: 10px;
+    border-top-left-radius:19px ;
+    border-top-right-radius:19px ;
+    font-size: 30px;
+    border-bottom:5px rgb(75, 124, 75) solid;
+
+}
+/* ACTIONS AND REPORTS*/
+
+#a-and-r-container{
+    border: 1px gray solid;
+    width:90%;
+    margin: 20px 5%;
+    min-height: 500px;
+
+}
+#a-and-r-container .h3-container{
+    background-color: rgb(75, 124, 75);
+    padding: 20px;
+    border-bottom:5px rgba(0, 0, 0, 0.796) solid;
+    
+    
+    
+}
+#a-and-r-container .h3-container h3{
+    margin: 0;
+    font-size:30px;
+
+}
+#actions{
+    background-color: rgba(0, 0, 0, 0.796);
+    padding: 15px;
+    border-bottom:5px gray solid;
+}
+.del{
+    right: 0;
+    top:0;
+    position:absolute;
+    border: none;
+}
+.x{
+    font-size:23px;
+    font-weight: bold;
+}
+/* FOOTER */
+footer{
+    
+    bottom:0;
+    width:100%;
+	border-top:1px black solid;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.364);
+}
+footer h2{
+	margin-left: 50px;
+}
+footer li{
+	margin-left: 90px;
+}
+footer p{
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.357);
+	color:black;
+	margin: 0;
+    
+}
+@media(max-width:600px){
+    .btn{
+        display:block;
+    }
+   
+}
+/* REPORTS */
+#reports-area{
+    
+    margin: 5px 10px;
+    background-color: gray;
+    border:5px rgba(0, 0, 0, 0.336) solid;
+    border-radius: 15px;
+    min-height: 300px;
+    position: relative;
+
+}
+
+.report{
+    list-style: none;
+    background-color: white;
+    margin: 10px 25px 10px 0;
+    min-height: 100px;
+    border-radius:10px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+
+#msg{
+    font-size: 35px;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    margin-top: 100px;
+    color:rgba(255, 255, 255, 0.548);
+
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+
