@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightgray;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: green;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        div > p{
+            font-size:23px;
+            text-align: center;
+        }
+        section{
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        thead{
+            background-color: black;
+            color:white;
+        }
+        table td{
+            padding:0 50px;
+            border:1px black solid;
+            margin: 0;
+        }
+    </style>
+    <title>es6 Practice</title>
+</head>
+<body>
+    <header>
+        <h1>
+            ES6 Practice
+        </h1>
+    </header>
+    <div>
+        <p>es6 syntax practice </p>
+    </div>
+    <hr>
+    <section>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>price</th>
+                        <th>size</th>
+                        <th>type</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <p id="intro"></p>
+    </section>
+    <!-- Script -->
+    <script src="es6Practice.js"></script>
+</body>
+</html>
