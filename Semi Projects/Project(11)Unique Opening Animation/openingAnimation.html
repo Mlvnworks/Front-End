@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+           margin:0;
+           padding:0;
+
+        }
+        body{
+             background-color:rgba(0, 0, 0, 0.521);
+
+        }
+        .block{
+            background-color: rgba(0, 0, 0, 0.425);
+            min-height: 100px;
+            min-width: 100px;
+            position:absolute;
+            border-radius: 50%;
+
+        }
+        #fd{
+            left: 0;
+            top:0;
+
+        }
+        #sd{
+            right: 0;
+            top:0;
+        }
+        #td{
+            bottom: 0;
+            left:0;
+
+        }
+        #frd{
+            bottom:0;
+            right: 0;
+        }
+
+        #mh{
+            position: fixed;
+            top:45vh;
+            left:37%;
+            font-size: 40px;
+            color:rgba(255, 255, 255, 0.459);
+            
+            
+        }
+
+    </style>
+    <script src="jQuery v3.6.0  (c) OpenJS Foundation and other contributors jquery.orglicense.js"></script>
+    <title>Opening Animation</title>
+</head>
+<body>
+    <h1 id="mh">Opening Animation...</h1>
+    <div id="BLOCK_CONTAINER">
+
+        <div id="fd" class="block">
+
+        </div>
+
+        <div id="sd" class="block">
+
+        </div>
+
+        <div id="td" class="block">
+
+        </div>
+
+        <div id="frd" class="block">
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+
+        setInterval(function(){
+// FIRST DIV
+           $('#fd').animate({
+               left: '47%',
+               top: '48vh',
+               minHeight: '50px',
+               minWidth: '50px',
+               borderRadius:'0px'
+           },800).animate({
+                left: '0',
+               top: '0',
+               minHeight: '100px',
+               minWidth: '100px',
+               borderRadius:'50%'
+            },800)
+//SECOND DIV
+            $('#sd').animate({
+               right: '47%',
+               top: '48vh',
+               minHeight: '50px',
+               minWidth: '50px',
+               borderRadius:'0px'
+           },800).animate({
+            right: '0',
+               top: '0',
+               minHeight: '100px',
+               minWidth: '100px',
+               borderRadius:'50%'
+           },800)
+//THIRD DIV
+            $('#td').animate({
+               left: '47%',
+               bottom: '48vh',
+               minHeight: '50px',
+               minWidth: '50px',
+               borderRadius:'0px'
+           },800).animate({
+            left: '0',
+               bottom: '0',
+               minHeight: '100px',
+               minWidth: '100px',
+               borderRadius:'50%'
+           },800)
+// FOURTH  DIV
+            $('#frd').animate({
+               right: '47%',
+               bottom: '48vh',
+               minHeight: '50px',
+               minWidth: '50px',
+               borderRadius:'0px'
+           },800).animate({
+                right: '0',
+               bottom: '0',
+               minHeight: '100px',
+               minWidth: '100px',
+               borderRadius:'50%'
+           },800)
+        },850)
+
+// H1 EFFECT
+        setInterval(function(){
+            $('#mh').fadeToggle(500)
+        },500)
+    })
+    </script>
+</body>
+</html>

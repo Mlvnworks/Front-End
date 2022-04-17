@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jQuery v3.6.0  (c) OpenJS Foundation and other contributors jquery.orglicense.js"> </script>
+    <title>Image Element controler</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            
+        }
+        body{
+            margin: 0;
+            padding:0;
+            background-color: lightgray;
+            height:100vh;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        /* HEADER */
+        header{
+            background-color: rgb(48, 121, 230);
+            color:white;
+            padding:15px;
+            border-bottom:5px black solid;
+
+        }
+        header > h1{
+            font-size: 30px;
+            letter-spacing: .3em;
+            word-spacing: 0.5em;
+            margin-left:80px;
+
+        }
+        /* MAIN CONTAINER */
+        #main-container{
+            background-color: 
+            white;
+            margin:10px 2.5% 0 2.5%;
+            width:95%;
+            min-height: 100vh;
+            border: 3px rgb(48, 121, 230) solid;
+        }
+        /* IMAGE */
+        #image-container{
+            background-color: gray;
+            margin:5px 0 0 0;
+            border:3px black solid;
+            width:70%;
+            min-height: 100vh;
+            box-sizing: border-box;
+
+        }
+        #img{
+            min-width: 80%;
+            max-height: 500px;
+            min-height: 300px;
+            max-width: 80%;
+            margin:30% 10% ;
+            opacity:1;
+            
+        }
+        /* CONTROLS AREA */
+        .div{
+            display:flex;
+            
+        }
+        #ctrl-container{
+            box-sizing: border-box;
+            width:25%;
+
+            margin: 5px 2.5% 0 2.5%;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445),
+                            5px 5px 5px rgba(0, 0, 0, 0.445);
+            border:1px black solid;
+        }
+        #ctrl{
+            margin-top: 100px ;
+        }
+        #ctrl > label{
+            display: block;
+            font-size:20px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        #ctrl > input{
+            width:80%;
+            margin:10px 10%;
+        }
+        /* BUTTON CONTAINER */
+        #btn-container{
+            background-color: rgb(23, 23, 182);
+            padding:15px 0;
+            border-bottom: 5px black solid;
+            box-sizing: border-box;
+        }
+        #import-btn{
+            background-color:rgba(0, 0, 0, 0.733);
+            color:lightgray;
+            font-size: 18px;
+            padding:3px ;
+            border-radius: 5px;
+            margin-left: 15px; 
+        }
+        #import-btn:hover{
+            background-color: black;
+            color:white;
+        }
+        /* FULL VIEW IMAGE */
+        #fullview-container{
+            display: none;
+            position: fixed;
+            height: 100vh;
+            width:100%;
+            top:0;
+            background-color:rgb(0, 0, 0);
+
+        }
+        #fullview-container img{
+            width:90%;
+            height:90% ;
+            margin:30px 5%;
+
+        }
+        #fullview-container button{
+            float:right;
+            margin-top:20px;
+            margin-right: 20px;
+            background-color: red;
+            color: white;
+
+
+        }
+        /* IMPORT AREA */
+        #import-container{
+            display:none;
+            position: fixed;
+            background-color: white;
+            border:5px black solid;
+            width:500px;
+            top:250px;
+            left:33.3%;
+            right:33.3%;
+            min-height: 400px;
+            
+
+
+
+        }
+        #msg{
+            float:left;
+            background-color: black;
+            color:white;
+            padding: 10px;
+            border-radius: 50%;
+            width:20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        #import-container > h2{
+            background-color: rgb(49, 119, 250);
+            margin:0;
+            padding:20px 0;
+            text-align: center;
+            border-bottom:2px black solid;
+            color:white;
+            font-size:25px;
+
+        }
+        #cancel{
+            float:right;
+            background-color: red;
+            color:white;
+
+        }
+        #url-input{
+            width:80%;
+            border:4px solid skyblue;
+            border-radius: 10px;
+            font-size: 20px;
+            padding:4px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin:30px 10%;
+        }
+        #import-container >form> hr{
+            width: 60%;
+            margin:auto;
+        }
+        #import-container >form> #submit{
+         background-color: blue;
+         color:black;
+         font-size: 18px;
+         width:25%;
+         margin:30px 37.5%; 
+         border-radius: 10px;
+         padding:5px 0;
+         font-weight: bold;
+
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image Element Controler</h1>
+    </header>
+    <div id="main-container" class="div">
+        <div id="image-container">
+             <img src="nature-img.jpg" alt="image" id="img">
+        </div>
+        <div id="ctrl-container">
+            <div id="btn-container">
+                 <button id="import-btn">Import</button>
+            </div>
+            <div id="ctrl">
+                <label>Opacity</label>
+                 <input type="range" max="10"  id="opacity" value="10"> 
+            </div>
+        </div>
+    </div>
+    <!-- IMAGE FULL VIEW -->
+    <div id="fullview-container">
+        <button id="back">X</button>
+        <img src="nature-img.jpg" id="img-fullview" alt="image" >
+    </div>
+    <!-- IMPORT AREA -->
+    <div id="import-container">
+        
+        <button id="cancel">X</button>
+        <p id="msg"><abbr title="Copy a image url on google or in any online source image from local storage cannot be used">?</abbr></p>
+        <h2>Put the Image URL</h2>
+        <form id="my-form">
+            <input type="text" id="url-input">
+            <br>
+            <hr>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+    </div>
+
+
+    <script>
+        // MAIN IMAGE
+        $(document).ready(function(){
+            $('#my-form').on('submit',function(e){
+                e.preventDefault();
+                const url=$('#url-input').val();
+
+                $('#fullview-container img').attr('src',url)
+                $('#img').attr('src',url)
+
+                $('#import-container').hide()
+            })
+            // IMPORT BUTTON
+            $('#import-btn').on('click', function(){
+                $('#import-container').fadeIn(300)
+            })
+            // CANCEL 
+            $('#cancel').on('click',function(){
+                $('#import-container').fadeOut(300)
+            })
+            $('#opacity').change(function(e){
+                const opacity=e.target.value / 10;
+                
+                $('#img').css({
+                    opacity: opacity
+                })
+                
+            })
+            // FULL VIEW IMAGE
+            $('#img').on('click',function(e){
+               const pOpacity=e.target.style.opacity;
+                $('#fullview-container img').css({
+                    opacity:pOpacity
+                })
+                
+                
+
+                $('#fullview-container').show()
+            })
+            // CANCEL BUTTON
+            $('#back').on('click',function(){
+                $('#fullview-container').hide()
+            })
+        })
+    </script>
+</body>
+</html>

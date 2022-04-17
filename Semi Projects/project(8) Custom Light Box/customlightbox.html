@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jQuery v3.6.0  (c) OpenJS Foundation and other contributors jquery.orglicense.js"> </script>
+    <title>Custom Ligth Box</title>
+    <style type="text/css">
+        /* OPEN MODAL */
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding:0;
+
+        }
+        /* OPEN MODAL */
+        #open-modal{
+            
+            position:fixed;
+            border:1px black solid;
+            background-color: black;
+            width:90%;
+            margin:0px 5%;
+            min-height:500px;
+            overflow: auto;
+           
+
+        }
+        /* PRODUCT */
+        .product{
+            display: none;
+            width:60%;
+            margin:50px 20%;
+            position:fixed ;
+            background-image: linear-gradient(rgb(75, 10, 10),rgb(140, 140, 12));
+            padding: 20px;
+        }
+        .img-info{
+            position: relative;
+        }
+        .product-h1{
+            position:absolute ;
+            background-color: rgba(0, 128, 0, 0.582);
+            color:black;
+            font-size: 23px;
+            left: 2.5%;
+            top:0;
+            width:200px;
+            border-top-right-radius: 20px;
+            padding: 5px;
+        }
+        #main-img{
+            margin: 10px 2.5%;
+            width:95%;
+           max-height: 500px;
+
+        }
+        #cancel{
+            right:0;
+            top:0;
+            position: absolute;
+            color:white;
+            background-color: rgba(255, 0, 0, 0.33);
+            float:right;
+        }
+        #buy-btn{
+            float:right;
+            background-color: rgb(248, 118, 47);
+            font-size: 20px;
+            width:100px;
+            margin-left: 20px;
+            border:2px white solid;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        
+        /* MAIN BODY */
+        header{
+            word-spacing: 1.6em;
+            letter-spacing: 0.8em;
+            margin:0;
+            text-align: center;
+            background-image:linear-gradient(to right,red,yellow);
+            padding:15px 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-bottom: 3px black solid;
+        }
+        header >h1{
+            margin:0;
+        }
+        
+        /* PRODUCT CONTAINER */
+        #product-container{
+            padding:0;
+            margin-top:20px;
+            width:90%;
+            margin:10px auto;
+            background-color: rgba(128, 128, 128, 0.39);
+            min-height: 500px;
+            border:5px orange solid;
+            margin-bottom: 100px;
+        }
+        /* MISMONG PRODUCT */
+
+        .p{
+            display: inline-block;
+            margin-left: 15px;
+            background-color: white;
+            max-height: 220px;
+            padding: 10px;
+            border:orange 1px solid;
+            border-radius: 10px;
+            
+        }
+        .product-H2{
+           margin: 5px;
+           background-color: green;
+           padding:5px 0;
+           text-align: center;
+           border-radius: 10px;
+           border-bottom:2px orange solid;
+        }
+        .pd{
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 170px;
+            max-height: 170px;
+        }
+
+
+
+        
+        /* MENU HEADER */
+        #product-container h1{
+            border-top-right-radius: 30px;
+            width:300px;
+            background-image: linear-gradient(to right,rgba(255, 0, 0, 0.507),rgba(255, 255, 0, 0.514));
+            padding:10px;
+            
+        }
+        /* ACTIONS AREA */
+        #actions{
+            padding: 15px;
+            width: 100%;
+            border-top:1px orange solid;
+            bottom: 0;
+            position: fixed;
+            background-color: white;
+        }
+        #sell-btn{
+            background-color: rgba(255, 166, 0, 0.726);
+            border:rgba(255, 0, 0, 0.493) 1px solid;
+            font-size: 25px;
+            border-radius: 10px;
+            width:200px;
+            padding: 10px 0;
+            font-weight:bold;
+
+        }
+        #sell-btn:hover{
+            background-color: orange;
+            border:red 1px solid;
+
+        }
+        #sell-btn:active{
+            background-color:rgba(255, 166, 0, 0.726) ;
+            border:rgba(255, 0, 0, 0.493) 1px solid;
+        }
+
+        /* SELL AREA */
+        #sell-area{
+            display: none;
+            position: fixed;
+            background-color: lightgray;
+            width:70%;
+            border:1px orange solid;
+            top:25vh;
+            left:15%;
+            
+            
+
+            
+        }
+        #sell-area h2{
+            
+            margin: 0;
+            background-image:linear-gradient(to right,red,yellow);
+            text-align: center;
+            padding: 10px 0;
+        }
+        #sell-area label{
+            display: block;
+            background-image: linear-gradient(to right,green,yellowgreen);
+            margin:15px 0 3px 0;
+            font-size: 23px;
+            width: 300px;
+            padding: 5px;
+            border-top-right-radius: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #sell-area input{
+            width:70%;
+            margin:5px 15%;
+            font-size: 19px;
+            border:2px orange solid;
+            padding:5px;
+            border-radius: 10px;
+        }
+        #sell-area hr{
+            width:80%;
+            margin:10px auto;
+            
+        }
+        #sell-btn2{
+            background-color: rgba(255, 166, 0, 0.637);
+            font-size:18px;
+            letter-spacing: 0.2em;
+            font-weight: bold;
+            padding:5px;
+            border-radius: 10px;
+            width:20%;
+            margin: 10px 40%;
+
+        }
+        #sell-btn2:hover{
+            background-color: orange;
+        }
+        #cancel-btn{
+            float: right;
+            background-color: rgb(243, 57, 57);
+        }
+        #cancel-btn:hover{
+            background-color: red;
+
+        }
+
+
+        
+        
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Custom Light Box</h1>
+    </header>
+    <!-- FLOAT AREA -->
+        <div class="product">
+                <button id="cancel">X</button>
+            <div class="img-info">
+
+                <h1 class="product-h1">Hello</h1>
+                <img src="image Library of custom light Box/burger-image-1.jpg" id="main-img">
+
+                <div id="lower-images">
+                    <button id="buy-btn">Buy</button>
+                    
+                </div>
+            </div>            
+        </div>
+    <!-- END OF FLOAT AREA -->
+        
+        <div id="product-container">
+             <h1>Menu</h1>
+            <div class="p">
+                <h2 class="product-H2">Burger || $10</h2>
+                <img src="image Library of custom light Box/burger-image-1.jpg" alt="image" id="first-product" class="pd">
+            </div>
+            <div class="p">
+                <h2 class="product-H2">Fries and burger || $5</h2>
+                <img src="image Library of custom light Box/f&b.jpg" alt="image" id="first-product" class="pd">
+            </div>
+        </div>
+            <!-- <div>
+                <h2>Lumpia</h2>
+                <img src="" alt="image" id="first-product" class="pd">
+            </div>
+            <div>
+                <h2>Fried Chicken</h2>
+                <img src="" alt="image" id="first-product" class="pd">
+            </div>
+            <h2>Hotdog</h2>
+            <img src="" alt="image" id="first-product" class="pd">
+        </div> -->
+    <!-- FIXED AREA / ACTION AREA -->
+    <!-- ACTION AREA -->
+    <div id="actions">
+        <button id="sell-btn">Sell</button>
+    </div>
+    <!-- SELL AREA -->
+    <div id="sell-area">
+        <button id="cancel-btn">X</button>
+        <h2>Product information</h2>
+        <form id="my-form">
+            <label>Enter Product Name</label>
+            <input type="text" name="" id="name-input" >
+            <br>
+            <label>image of product</label>
+            <input type="text" name="" id="image-input">
+            <br>
+            <label for="">price ($)</label>
+            <input type="number" id="number-input">
+            <br>
+            <hr>
+            <button id="sell-btn2">Sell</button>
+        </form>
+    </div>
+
+    <script>
+       $(document).ready(function (){
+            $('#product-container').on('click',function(e){
+                 
+                if(e.target.classList.contains('pd')){
+                    const productHeading=e.target.previousElementSibling.textContent;
+                    const mainImg=e.target.attributes[0].value;
+                    
+                    $('#main-img').attr('src',mainImg);
+                    $('.product-h1').text(productHeading)
+
+                    $('.product').slideDown(300);
+                }
+            })
+            $('#cancel').on('click',function (){
+                $('.product').hide();
+            })
+            // SELL AREA JS
+            $('#sell-btn').on('click',function (){
+                $('#sell-area').slideDown(100)
+            })
+            $('#cancel-btn').on('click',function(){
+                $('#sell-area').hide()
+            } )
+            $('#my-form').on('submit',function(e){
+                e.preventDefault()
+
+                const pName=$('#name-input').val();
+                const imgInput=$('#image-input').val();
+                const nInput=$('#number-input').val()
+            if(pName=='' || imgInput=="" || nInput=="" ){
+                alert('please fill all fields')
+               
+            }else{
+                
+
+                $('#product-container').append(`<div class="p">
+                <h2 class="product-H2">${pName} || $${nInput}</h2>
+                <img src="${imgInput}" alt="image" id="first-product" class="pd">
+            </div>`)
+
+                 $('#sell-area').hide();
+            }
+            
+            })
+            
+       })
+    </script>
+</body>
+</html>

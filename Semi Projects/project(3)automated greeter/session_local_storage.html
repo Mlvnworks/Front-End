@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>Session_local_storage</title>
+        <script src="session_local_storage.js">
+
+        </script>
+        <link rel="stylesheet" href="session_local_storage.css">
+    </head>
+    <body>
+        <header>
+            <h1>AUTOMATED GREETER</h1>
+        </header>
+        <div id="container">
+                <div id="inputContainer">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="enter first name" >
+                    <br>
+                    <label for="lastNAme">Last Name</label>
+                    <input type="text" id="lastName" placeholder="enter last name" >
+                    <br>
+                </div>
+                
+            
+            <br>
+            <div id="button">
+                <div class="btn">
+                    <button onclick="set()">set Items</button>
+                </div>
+                
+                <div class="btn">
+                    <button onclick="get()">Get Items</button>
+                </div>
+                
+                <div class="btn">
+                    <button onclick="remove()">Clear Items</button>
+                </div>
+            </div>
+            <div id="dataContainer">
+                <p id="data"></p>
+        </div>
+    </div>
+    </body>
+</html>

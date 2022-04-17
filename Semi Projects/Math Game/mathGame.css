@@ -1,0 +1,41 @@
+body{
+   background-color: #1f4068;
+}
+/* Header */
+.header{
+    background-color: #162447;
+    color: #e33e5a;
+    padding: 10px 0;
+}
+/* Section */
+.scored{
+    color:#e33e5a;
+}
+#endPlay{
+    display: none;
+}
+#greet{
+    color:#e33e5a;
+}
+#played{
+    display: none;
+}
+.output{
+    margin-left: 30px;
+}
+#equation{
+    color: white;
+    font-size: larger;
+}
+#result-1,#result-2{
+    margin: 0 50px;
+}
+#math-container{
+    border-radius:10px ;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: #1a1b2f;
+}
+#result-container{
+    margin-top: 50px;
+}

@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: linear-gradient(blue,skyblue);
+    height:100vh; 
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+/* header */
+header{
+    background-color: black;
+    color:antiquewhite;
+    padding:10px;
+
+}
+/* button */
+#btn{
+    width: 30%;
+    height: 150px;
+    margin:200px 35%;
+    font-size: 50px;
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.658);
+    color:white;
+
+
+}
+#btn:active{
+    background-color: rgba(128, 128, 128, 0.562);
+    
+}
+
+/* h2 */
+#score-area{
+    background-color: white;
+    box-shadow: inset 10px 10px 7px white,
+                10px 10px 7px rgba(0, 0, 0, 0.418);
+    width:50%;
+    margin:0 25%;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size:30px ;
+    
+
+}
+#score-area h2{
+    padding: 30px 15px;
+
+    
+
+}
+/* score-area */
+#score-div{
+    color:red;
+    position: fixed;
+    width:100%;
+    min-height: 100vh;
+    text-align: center;
+    
+   background-image: url(th.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+    
+    
+}
+#score-div h3{
+
+    margin-top:200px ;
+    font-size:60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+#score-div button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+#score-div button:hover{
+    background-color: gray;
+    color:white;
+}
+/* count-down */
+#countDown{
+   
+   width:50%;
+    margin:100PX 25%;
+    position: absolute;
+
+   
+    
+
+}
+@media(max-width:600px){
+    #score-div{
+        width: 600px;
+    }
+}

@@ -1,0 +1,101 @@
+*{
+    font-family: 'Times New Roman', Times, sans-serif;
+
+}
+body{
+   background-image: linear-gradient(black,white);
+    margin: 0;
+}
+/*h1*/
+h1{
+    text-align: center;
+    border-bottom:1px black solid;
+    background-color: white;
+    margin-top: 0;
+    padding: 30px;
+}
+/* container */
+#calContainer{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 5px 5px 12px white,
+                     5px 5px 12px rgba(0, 0, 0, 0.349);
+    align-items: center;
+    border-radius: 20px;
+    padding:20px;
+    margin:50px 50px 0px 50px; 
+}
+/*buttons and input */
+#calContainer button{
+    padding: 10px;
+    border-radius: 15px;
+    margin:10px;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-weight: bolder;
+    font-size: 20px;
+}
+#fn{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+#sn{
+    padding:10px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+#ans{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#buttons button:hover{
+    background-color: black;
+    color:white;
+
+}
+/* clear button */
+#clear button{
+    background-color: rgba(224, 30, 30, 0.719);
+}
+#clear button:hover{
+    background-color: red;
+    color:white;
+}
+/* footer */
+footer{
+    border-top: 1px black solid;
+    margin-top:270px;
+    padding:30px;
+    background-color: rgba(0, 0, 0, 0.432);
+    color:white;
+    font-weight: bolders;
+    
+
+}
+/* header footer */
+
+footer h2{
+    font-size: x-large;
+    margin: 0;
+    
+    
+    
+}
+footer p{
+    font-weight: bold;
+    font-size: 18px;
+    color:blue;
+    
+}
+#list{
+    font-size: 20px;
+    margin-left: 60px;
+    
+    margin-top: 15px;
+}
+#listContainer{
+    display: flex;
+}
