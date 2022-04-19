@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.post-title{
+    border-bottom:1px lightgray solid;
+    text-align: center;
+    font-size: 23px;
+}
+.post-action{
+    border-top: 3px lightgray solid;
+    margin-top: 20px;
+}
+.post-text{
+    line-height: 1.6rem;
+}
+.post-container{
+    padding: 20px;
+    border: 5px gray solid;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
