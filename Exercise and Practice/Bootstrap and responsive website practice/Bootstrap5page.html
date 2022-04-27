@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Bootsrap5page.css">
+    <title>Bootstrap  5 Practice Sheet</title>
+</head>
+<body onscroll="navStick()">
+    <!--Nav Area-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark" id="main-nav">
+        <div class="container">
+            <a clas=" navbar-brand">
+                <span class="fs-1 d-block d-md-none">Menu</span>
+                <img src="images/schoollogo.jpg" alt="Logo" class="img-fluid w-75 d-none d-md-block">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav ms-auto"> 
+                    <li clas="nav-item">
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-person-circle d-inline d-md-none"></i>
+                            Admin
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-list d-inline d-md-none"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-view-list d-inline d-md-none"></i>
+                            Over view
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </nav>
+    <!--Showcase Area-->
+    <div class="bg-dark text-light m-0">
+        <div class="container">
+            <div class="d-block d-md-flex p-4 p-md-4">
+                <div class="lh-based lh-md-lg text-center text-md-start col-12 col-md-6">
+                        <span class="fs-1 text-warning">To Expect</span>
+                        <p clas="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur sunt deserunt enim assumenda ab sint officiis. Numquam, commodi earum magnam cumque vitae, minima obcaecati laudantium quae doloremque, sit ut!</p>
+                    <br>
+                        <button class="btn btn-success btn-lg">Enroll</button>
+                </div>
+                <div class="col-6 d-none d-md-block">
+                    <img src="../practice_area/Images/kidsreading.png" alt="Kids Reading" class="img-fluid w-75 p-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Recieve updates-->
+    <div class="bg-primary text-dark p-3">
+        <div class="container">
+            <div class="d-md-flex">
+                <span class=" col-md-5 fs-5">Recieve updates from Villa Boado Elementary School</span>
+                <div class="col-md-7">
+                    <div class="container">
+                        <div class="input-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Enter mobile number">
+                            <button class="btn btn-dark" type="button">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Over View -->
+    <div>
+        <div>
+            <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/241989633_211562391033616_2527043134852780991_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEKbVHtOibBi7TA5dlKoAUFN9AKNiD1JPY30Ao2IPUk9nfhFRB51fiK3dwXXEs0Cdbjun_GRq37AWbDuFhkEamt&_nc_ohc=nr6isjlSwhYAX-gSWnu&tn=wSFG-SLQw9bUAH8A&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT_f7wJvjqN2wtXzdn5Uzx5pf8cxX_q3VhgQqhXonollgQ&oe=62414800" alt="Over View" class="img img-fluid opacity-100" id="stick-start">
+        </div>
+    </div>
+    <!--Additionals-->
+    <section class="bg-success  text-dark text-center p-5" id="additionals">
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-md shadow-lg bg-light rounded p-3">
+                    <div class="h1">
+                        <i class="bi bi-flag"></i>
+                    </div>
+                    <h2>Mision</h2>
+                    <p class="lead text-center">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque ratione tempora ullam fugiat praesentium a natus accusamus quod illo.
+                    </p>
+                </div>
+                <div class="col-md shadow-lg bg-light rounded p-3">
+                    <div class="h1">
+                        <i class="bi bi-binoculars"></i>
+                    </div>
+                    <h2>Vision</h2>
+                    <p class="lead text-center ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque ratione tempora ullam fugiat praesentium a natus accusamus quod illo.
+                    </p>
+                </div>
+                <div class="col-md shadow-lg bg-light rounded p-3">
+                    <div class="h1">
+                        <i class="bi bi-exclamation-circle"></i>
+                    </div>
+                    <h2>About us</h2>
+                    <p class="lead text-center">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque ratione tempora ullam fugiat praesentium a natus accusamus quod illo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Faq-->
+    <section class="bg-light text-dark p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Ask Question</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!--Q1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     Where At You Located Exactly Located?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae excepturi consequuntur nostrum alias obcaecati itaque ipsum praesentium magnam officia facilis.</div>
+                  </div>
+                </div>
+                <!--Q2-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How Much Tuition?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima veritatis culpa cumque dicta aspernatur.</div>
+                  </div>
+                </div>
+                <!--Q3-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      When The Start of Enrollment?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis excepturi enim iusto aliquid voluptatem eligendi, odio modi. Pariatur hic cupiditate rem expedita voluptatem nam voluptate nisi numquam qui saepe.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 d-md-flex">
+                <label for="uq"class="col-md-5">Couldn't Find Answer Ask Here</label>
+                <div class="col-md-7">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Question Here..." id="uq">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#question-modal" id="ask-btn">Ask</button>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-primary text-light p-2">
+        <div class="container">
+            <div class="d-flex">
+                <span class="col-10">
+                    Copyright &copy; 2022
+                </span>
+                <div class="col-2">
+                    <div class="text-end d-flex">
+                        <div class="text-light">
+                        <div class="h4">
+                            <a href="#">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="text-light">
+                            <div class="h4">
+                                <a href="#">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-light">
+                            <div class="h4">
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal fade" id="question-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Recepient Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="form-group">
+                  <label class="form-control-label" for="">Question</label>
+                  <textarea name="" id="question-output" cols="30" rows="4" readonly class="form-control">
+
+                  </textarea>
+                  <label for="" class="form-control-label">Full Name</label>
+                  <input type="text" name="" id="" class="form-control">
+                  <label for="" class="form-control-label">Mobile Number</label>
+                  <input type="text" name="" id="" class="form-control">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send question</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nav-Sticky-->
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark" id="nav-sticky">
+        <div class="container">
+            <a clas=" navbar-brand">
+                <span class="fs-1">Menu</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav ms-auto"> 
+                    <li clas="nav-item">
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-person-circle d-inline d-md-none"></i>
+                            Admin
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-list d-inline d-md-none"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link fs-4">
+                            <i class="bi bi-view-list d-inline d-md-none"></i>
+                            Over view
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </nav>
+    <!-- BOOTSTRAP LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="Bootstrap5page.js"></script>
+</body>
+</html>
