@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screenLock.css">
+    <title>Screen Lock</title>
+</head>
+<body>
+    <div class="shadowed">
+        <div class="lock-heading">
+            <h1 id="alert">Unlock Password</h1>
+        </div>
+        <div>
+            <div class="input-lock-container">
+                <input type="password" id="input-lock" readonly placeholder="4 digit password...">
+            </div>
+            <div id="fp">
+                Reset password
+            </div>
+            <div class="btn-container" id="num-btns">
+                <div class="btns">
+                    <button id="btn-1" class="btn-lock">1</button>
+                    <button id="btn-2" class="btn-lock">2</button>
+                    <button id="btn-3" class="btn-lock">3</button>
+                </div>
+                <div class="btns">
+                    <button id="btn-4" class="btn-lock">4</button>
+                    <button id="btn-5" class="btn-lock">5</button>
+                    <button id="btn-6" class="btn-lock">6</button>
+                </div>
+                <div class="btns">
+                    <button id="btn-7" class="btn-lock">7</button>
+                    <button id="btn-8" class="btn-lock">8</button>
+                    <button id="btn-9" class="btn-lock">9</button>
+                </div>
+                <div class="btns">
+                    <button id="btn-delete" class="btn-act">CL</button>
+                    <button id="btn-0" class="btn-lock">0</button>
+                    <button id="btn-done" class="btn-act">-></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reset-password">
+        
+    </div>
+    <script src="screenLock.js"></script>
+</body>
+</html>

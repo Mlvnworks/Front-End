@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e3f6f5;
+}
+
+body header {
+  background-color: #10375c;
+  padding: 20px 0;
+}
+
+body header h2 {
+  margin-left: 30px;
+  color: #e3f6f5;
+}
+
+body .mini-nav {
+  background-color: #29de92;
+  padding: 15px 0;
+}
+
+body .mini-nav p {
+  color: #10375c;
+  margin-left: 30px;
+  font-size: 23px;
+}
+
+body section {
+  margin: 80px;
+}
+
+body section .flexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .flexer .col {
+  border: 1px solid black;
+  width: 48%;
+  background-color: #bae8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 600px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+body section .flexer .col h3 {
+  background-color: #10375c;
+  padding: 10px;
+  color: #ffffff;
+}
+
+body section .flexer .col #form-catcher {
+  text-align: center;
+}
+
+body section .flexer .col #form-catcher label {
+  display: block;
+  margin: 15px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+body section .flexer .col #form-catcher input {
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 10px;
+}
+
+body section .flexer .col #form-catcher select {
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 10px;
+}
+
+body section .flexer .col #form-catcher .semi-header {
+  text-align: start;
+  border-top: 1px #10375c solid;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+body section .flexer .col #form-catcher #objective-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+body section .flexer .col #form-catcher #add-skill {
+  border: 1px #29de92 solid;
+  padding: 5px 0;
+  margin: 10px 2%;
+  border-radius: 10px;
+  background-color: #e3f6f5;
+  color: gray;
+}
+
+body section .flexer .col #form-catcher #add-skill:hover {
+  background-color: #bae8e8;
+  color: black;
+}
+
+body section .flexer .col #form-catcher li {
+  position: relative;
+  margin: 10px 2%;
+}
+
+body section .flexer .col #form-catcher li button {
+  top: 3px;
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.411);
+  right: 8px;
+  border: red 1px solid;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+body section .flexer .col #form-catcher li button:hover {
+  background-color: red;
+}
+
+body section .flexer .col #resume-format {
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+body section .flexer .col #resume-format div {
+  width: 90%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+body section .flexer .col #resume-format div p {
+  text-align: start;
+  margin-left: 30px;
+}
+
+body section .flexer .col #resume-format div .eds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section .flexer .col #resume-format div .eds p {
+  text-align: start;
+  margin-left: 0;
+}
+
+body section .flexer .col #resume-format div .ref {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .flexer .col #resume-format div .last {
+  text-align: end;
+  margin-top: 20px;
+}
+
+body section .flexer .col #resume-format .flexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  padding-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section .flexer .col #resume-format .flexer .avatar-container {
+  border: 2px black solid;
+  padding: 8px;
+  width: 25%;
+  text-align: center;
+}
+
+body section .flexer .col #resume-format .flexer .avatar-container #avat {
+  max-width: 100%;
+}
+
+body section .flexer .col #resume-format .flexer .basic-info-container {
+  margin-left: 10px;
+  width: 65%;
+}
+
+body section .flexer .col #resume-format .flexer .basic-info-container p {
+  text-align: start;
+  margin: 0;
+}
+
+body section .flexer .col #resume-format .flexer .basic-info-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+body section .flexer .col #resume-format2 {
+  background-color: #ffffff;
+  font-size: 13px;
+  word-wrap: break-word;
+}
+
+body section .flexer .col #resume-format2 div {
+  width: 90%;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+body section .flexer .col #resume-format2 div #format-2-flexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section .flexer .col #resume-format2 div #format-2-flexer .bsc-info #full-name-output {
+  font-weight: bold;
+}
+
+body section .flexer .col #resume-format2 div #format-2-flexer .img-container {
+  border: 2px black solid;
+  padding: 10px;
+  max-width: 30%;
+  text-align: center;
+}
+
+body section .flexer .col #resume-format2 div #format-2-flexer .img-container img {
+  max-width: 100%;
+}
+
+body section .flexer .col #resume-format2 div #full-info-container {
+  margin-top: 10px;
+  border-top: 5px black solid;
+}
+
+body section .flexer .col #resume-format2 div #full-info-container .objective-header {
+  font-weight: bold;
+}
+
+body section .flexer .col #resume-format2 div #full-info-container #objective-output {
+  margin-top: 5px;
+}
+
+body section .flexer .col #resume-format2 div #full-info-container .academic-background-flexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .flexer .col #resume-format2 div #full-info-container .work-experience-list {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+body section .flexer .col .loading-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(0, 0, 0, 0.473);
+  font-size: 23px;
+  font-weight: bold;
+}
+
+body section .flexer .col .load-toggle {
+  display: none;
+}
+
+body section .flexer .col .btn-act {
+  background-color: #10375c;
+  padding: 20px 0;
+  border-top: 1px black solid;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body section .flexer .col .btn-act button {
+  padding: 10px;
+  text-align: center;
+  color: #10375c;
+  background-color: #e3f6f5;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  margin-right: 50px;
+}
+
+body section .flexer .col .btn-act button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+body section .flexer .col .btn-act button:active {
+  outline: 2px #29de92 solid;
+}
+
+body section .flexer .res-col {
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+body footer {
+  background-color: #10375c;
+  padding: 5px 0;
+}
+
+body footer p {
+  text-align: end;
+  font-size: 20px;
+  color: #e3f6f5;
+  margin-right: 30px;
+}
+
+.fl {
+  font-size: 20px;
+}
+/*# sourceMappingURL=formatBased.css.map */

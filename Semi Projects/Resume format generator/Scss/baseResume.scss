@@ -1,0 +1,82 @@
+@import 'themeColors';
+@import 'utilities';
+// global font
+$arial: 'arial';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-blue;
+    font-family: $arial;
+
+    header {
+        @include header();
+    }
+    .mini-nav {
+        @include miniNav();
+    }
+    .formats {
+        div {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+
+            div {
+                display: block;
+                border: 1px solid black;
+                background-color: $light-blue;
+                border-radius: 10px;
+                overflow: hidden;
+                min-height: 100%;
+                h3 {
+                    background-color: $dark-blue;
+                    color: $light;
+                    padding: 10px 0;
+                }
+                img {
+                    size: 100%;
+                }
+            }
+            :hover {
+                box-shadow: 8px 8px 30px 5px $dark-blue;
+            }
+        }
+    }
+    footer {
+        @include footer();
+    }
+    @media (max-width: 999px) {
+        .formats {
+            div {
+                justify-content: center;
+                div {
+                    margin: 15px 2%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .formats {
+            div {
+                display: block;
+
+                div {
+                    margin: 15px 5%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

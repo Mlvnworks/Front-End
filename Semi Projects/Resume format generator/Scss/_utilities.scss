@@ -1,0 +1,72 @@
+@mixin header{
+    background-color: $dark-blue;
+    padding: 20px 0;
+
+    h2{
+        margin-left: 30px;
+        color: $light-blue;
+    }
+}
+
+@mixin miniNav {
+    background-color: $green;
+    padding: 15px 0;
+    
+    p{
+        color: $dark-blue;
+        margin-left : 30px;
+        font-size: 23px;
+    }
+}
+
+@mixin footer {
+    background-color: $dark-blue;
+        padding: 5px 0;
+        
+        p{
+            text-align: end;
+            font-size: 20px;
+            color: $light-blue;
+            margin-right: 30px;
+        }
+}
+
+@mixin flexer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+@mixin label {
+    display: block;
+    margin: 15px auto;
+    font-size: 20px;
+    text-align: center;
+}
+@mixin input {
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+@mixin  buttonsLight {
+    padding: 10px;
+    text-align: center;
+    color: $dark-blue;
+    background-color: $light-blue;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    &:hover{
+        background-color: $light;
+        color: black;
+    }
+    &:active{
+        outline: 2px $green solid;
+    }
+}
+
+
