@@ -1,0 +1,14 @@
+{
+    "name": "npm-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "goLive": "live-server",
+        "watchSass": "gulp-sass"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

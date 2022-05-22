@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>My Website</title>
+    </head>
+    <body>
+        <header class="py-1">
+            <div class="container-fluid">
+                <h1>My <span class="colorize-yellow">Website</span></h1>
+            </div>
+        </header>
+        <section class="my-5">
+            <div class="article-container">
+                <section class="form-container p-2">
+                    <div class="container">
+                        <form action="" id="my-form">
+                            <label for="healine-input">Headline</label>
+                            <input
+                                type="text"
+                                id="headline-input"
+                                placeholder="write headline..."
+                                class="input"
+                            />
+                            <br />
+                            <label for="article-input">Write an Article</label>
+                            <textarea
+                                name="article-input"
+                                id="article-body-input"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                            <br />
+                            <div class="text-end">
+                                <input
+                                    type="submit"
+                                    value="submit"
+                                    id="btn-submit"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="on-article">
+                    <h3 class="py-1">Latest Article</h3>
+                    <div>
+                        <ul id="articles"></ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+</html>

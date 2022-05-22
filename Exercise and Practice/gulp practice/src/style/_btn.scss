@@ -1,0 +1,18 @@
+%btn {
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    background-color: $b;
+    color: $g;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: lighten($b, 5%);
+        color: $w;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}

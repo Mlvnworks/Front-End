@@ -1,0 +1,47 @@
+@media only screen and (max-width: 425px) {
+    .container-fluid,
+    .container {
+        margin: 0 auto;
+        width: 98%;
+    }
+    header {
+        margin-top: 35px;
+
+        h1 {
+            letter-spacing: unset;
+            font-size: 28px;
+            text-shadow: none;
+            margin-left: 10px;
+            .main-point {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .frame {
+        min-height: 500px;
+        width: 90%;
+        margin: auto;
+        hr {
+            margin-bottom: 0;
+        }
+
+        .btn-act {
+            padding: 10px 20px;
+            &:hover {
+            }
+            &:active {
+            }
+        }
+
+        #play-btn {
+            font-size: 35px;
+            padding: 25px;
+            height: 130px;
+        }
+        #loader {
+            p {
+            }
+        }
+    }
+}

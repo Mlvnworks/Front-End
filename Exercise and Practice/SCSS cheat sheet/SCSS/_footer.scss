@@ -1,0 +1,51 @@
+%footer {
+    background-color: $primary;
+    padding: 30px;
+    margin-top: 50px;
+    // Links
+    a {
+        color: $light-faded;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+            color: $light;
+        }
+
+        &:active {
+            color: $light-faded;
+        }
+    }
+
+    // paragraphs
+    p {
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 1.6em;
+    }
+
+    // List
+    ul {
+        padding: 18px;
+        font-size: 20px;
+        li {
+            list-style: none;
+        }
+    }
+
+    // Heading
+    h3 {
+        @include set-bg($primary);
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .col {
+        columns: 40%, 12;
+    }
+}
+
+.footer {
+    @extend %footer;
+}

@@ -1,0 +1,100 @@
+%btn-act {
+    @extend %container-bg;
+    @extend %shadow;
+}
+
+%btn {
+    @include set-bg($light);
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 0.7em;
+
+    &:hover {
+        border: $dark solid 1px;
+    }
+    &:active {
+        outline: 3px solid $light-f;
+        transform: scale(0.98);
+    }
+}
+
+@function set-btn-color($type) {
+    @if ($type == 'dark') {
+        @return darken($primary, 10%);
+    } @else if($type == 'success') {
+        @return darken($light, 10%);
+    } @else if($type == 'danger') {
+        @return darken($light, 5%);
+    } @else if($type == 'info') {
+        @return darken($light, 10%);
+    } @else if($type == 'primary') {
+        @return $dark;
+    } @else if($type == 'warn') {
+        @return darken($light, 15%);
+    }
+}
+
+@function set-btn-bg($type) {
+    @if ($type == 'dark') {
+        @return $dark;
+    } @else if($type == 'success') {
+        @return $success;
+    } @else if($type == 'danger') {
+        @return $danger;
+    } @else if($type == 'info') {
+        @return $info;
+    } @else if($type == 'primary') {
+        @return $primary;
+    } @else if($type == 'warn') {
+        @return $warn;
+    }
+}
+
+@function set-btn-outline($type) {
+    @if ($type == 'dark') {
+        @return $dark-f;
+    } @else if($type == 'success') {
+        @return $success-f;
+    } @else if($type == 'danger') {
+        @return $danger-f;
+    } @else if($type == 'info') {
+        @return $info-f;
+    } @else if($type == 'primary') {
+        @return $primary-f;
+    } @else if($type == 'warn') {
+        @return $warn-f;
+    }
+}
+
+@mixin btn-theme($color) {
+    background-color: set-btn-bg($color);
+    color: set-btn-color($color);
+
+    &:hover {
+        @if ($color == 'dark') {
+            border: none;
+            background-color: lighten(set-btn-bg($color), 10%);
+            color: set-btn-color($color);
+        } @else {
+            border: none;
+            background-color: lighten(set-btn-bg($color), 5%);
+            color: lighten(set-btn-color($color), 100%);
+        }
+    }
+    &:active {
+        outline: set-btn-outline($color) 3px solid;
+    }
+}
+.btn {
+    @extend %btn;
+}
+
+$btn-types: ('dark', 'success', 'danger', 'info', 'primary', 'warn');
+
+@each $btn-type in $btn-types {
+    .btn-#{$btn-type} {
+        @extend %btn;
+        @include btn-theme($btn-type);
+    }
+}

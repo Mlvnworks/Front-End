@@ -1,0 +1,91 @@
+// auto adjust btm text color to based on btn background
+@function btn-color($color) {
+    @if ($color == $primary-faded) {
+        @return $light-faded;
+    } @else if($color == $success-faded) {
+        @return $light-faded;
+    } @else if($color == $info-faded) {
+        @return $secondary-faded;
+    } @else if ($color == $primary) {
+        @return $light;
+    } @else if($color == $success) {
+        @return $light;
+    } @else if($color == $info) {
+        @return $secondary;
+    }
+}
+
+// Mixing btn background and btn text color
+@mixin btn-bg-to-color($color) {
+    background-color: $color;
+    color: btn-color($color);
+}
+
+// Setting Btn Outline
+@function btn-outline($btn-bg-color) {
+    @if ($btn-bg-color == $primary) {
+        @return $primary-faded solid 5px;
+    } @else if($btn-bg-color == $success) {
+        @return $success-faded solid 5px;
+    } @else if($btn-bg-color == $info) {
+        @return $info-faded solid 5px;
+    }
+}
+
+%btn {
+    padding: 8px;
+    font-size: 1.16em;
+    background-color: $secondary-faded;
+    color: $light-faded;
+
+    &:hover {
+        color: $light;
+        background-color: $primary;
+    }
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.btn {
+    @extend %btn;
+}
+
+.btn-success {
+    @extend %btn;
+    @include btn-bg-to-color($success-faded);
+    border: none;
+    &:hover {
+        @include btn-bg-to-color($success);
+    }
+    &:active {
+        outline: btn-outline($success);
+        transform: none;
+    }
+}
+
+.btn-info {
+    @extend %btn;
+    @include btn-bg-to-color($info-faded);
+    border: none;
+    &:hover {
+        @include btn-bg-to-color($info);
+    }
+    &:active {
+        outline: btn-outline($info);
+        transform: none;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    @include btn-bg-to-color($primary-faded);
+    border: none;
+    &:hover {
+        @include btn-bg-to-color($primary);
+    }
+    &:active {
+        outline: btn-outline($primary);
+        transform: none;
+    }
+}

@@ -1,0 +1,62 @@
+// Containers
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 95%;
+    margin: 0 auto;
+}
+
+// Padding & margins
+$sizes: (1, 2, 3, 4, 5);
+
+@each $size in $sizes {
+    // padding top and bttom
+    .p-#{$size} {
+        padding: #{$size}rem;
+    }
+    .py-#{$size} {
+        padding: #{$size}rem 0;
+    }
+
+    // padding inline
+    .px-#{$size} {
+        padding: 0 #{$size}rem;
+    }
+
+    // margin top and bottom
+    .mx-#{$size} {
+        margin: 0 #{$size}rem;
+    }
+
+    // margin inline
+    .my-#{$size} {
+        margin: #{$size}rem 0;
+    }
+}
+
+// colorize
+$colors: (yellow, red, green, blue);
+
+@each $color in $colors {
+    .colorize-#{$color} {
+        color: #{$color};
+    }
+}
+
+// inputs
+%input {
+    background-color: darken($w, 10%);
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    &:focus {
+        border-bottom: 1px solid $b;
+        background-color: $w;
+    }
+}

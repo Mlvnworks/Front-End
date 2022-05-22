@@ -1,0 +1,133 @@
+// Text gradient
+@mixin set-text-gradient($color1, $color2) {
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// container background and shadow
+%container-bg {
+    background-color: darken($color: $light, $amount: 10%);
+}
+// box shadow
+
+%shadow {
+    box-shadow: inset 8px 8px 4px $light-f, 5px 5px 8px $dark-f;
+}
+
+///////////////////////containers
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 95%;
+    margin: 0 auto;
+}
+///////////////////////padding and margin
+$space-sizes: (1, 2, 3, 4, 5);
+
+@each $space-size in $space-sizes {
+    // margin & padding
+    .m-#{$space-size} {
+        margin: #{$space-size}rem;
+    }
+
+    .p-#{$space-size} {
+        margin: #{$space-size}rem;
+    }
+
+    // margin and padding inline
+    .mx-#{$space-size} {
+        margin: 0 #{$space-size}rem;
+    }
+
+    .px-#{$space-size} {
+        padding: 0 #{$space-size}rem;
+    }
+
+    // margin and padding vertically
+    .my-#{$space-size} {
+        margin: #{$space-size}rem 0;
+    }
+
+    .py-#{$space-size} {
+        padding: #{$space-size}rem 0;
+    }
+
+    // margin and padding on right
+    .me-#{$space-size} {
+        margin-right: #{$space-size}rem;
+    }
+
+    .pe-#{$space-size} {
+        padding-right: #{$space-size}rem;
+    }
+
+    // margin and padding on left
+    .ms-#{$space-size} {
+        margin-left: #{$space-size}rem;
+    }
+    .ps-#{$space-size} {
+        padding-left: #{$space-size}rem;
+    }
+
+    // margin and padding on top
+    .mt-#{$space-size} {
+        margin-top: #{$space-size}rem;
+    }
+
+    .pt-#{$space-size} {
+        padding-top: #{$space-size}rem;
+    }
+
+    // margin and padding on bottom
+
+    .mb-#{$space-size} {
+        margin-bottom: #{$space-size}rem;
+    }
+    .pb-#{$space-size} {
+        padding-bottom: #{$space-size}rem;
+    }
+}
+
+////////////////////// round
+@function set-round-size($size) {
+    @if ($size == 'sm') {
+        @return 5px;
+    } @else if($size == 'md') {
+        @return 10px;
+    } @else if($size == 'lg') {
+        @return 18px;
+    } @else if($size == 'circ') {
+        @return 50%;
+    }
+}
+
+%round {
+    border-radius: 8px;
+}
+.round {
+    @extend %round;
+}
+$round-sizes: ('sm', 'md', 'lg', 'circ');
+
+@each $round-size in $round-sizes {
+    .round-#{$round-size} {
+        border-radius: set-round-size($round-size);
+    }
+}
+
+/////////////////////////// sync color to bg
+@function set-color($color) {
+    @if (lightness($color) > 60) {
+        @return $dark;
+    } @else {
+        @return $light;
+    }
+}
+
+@mixin set-bg($color) {
+    background-color: $color;
+    color: set-color($color);
+}

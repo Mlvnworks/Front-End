@@ -1,0 +1,70 @@
+// Spacing
+$spaceAmount: (1, 2, 3, 4, 5);
+
+@each $space in $spaceAmount {
+    // Margin
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    // Padding
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
+
+// Containers
+%round {
+    border-radius: 8px;
+}
+.rounded {
+    @extend %round;
+    overflow: auto;
+}
+%container {
+    margin: 0 auto;
+}
+.container {
+    @extend %container;
+    width: 90%;
+}
+.container-fluid {
+    @extend %container;
+    width: 95%;
+}
+// Text Coloring
+@function set-color($color) {
+    @if (lightness($color) > 70) {
+        @return $secondary;
+    } @else {
+        @return $warn;
+    }
+}
+
+// mix bg coloring to text coloring
+@mixin set-bg($color) {
+    background-color: $color;
+    color: set-color($color);
+}
+
+// Display
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.d-none {
+    display: none;
+}

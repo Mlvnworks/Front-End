@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1440px) {
+    header {
+        h1 {
+            letter-spacing: unset;
+            font-size: 35px;
+            text-shadow: none;
+            .main-point {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .frame {
+        min-height: 500px;
+        min-width: 300px;
+        margin: 2rem auto;
+        text-align: center;
+        transform: scale(0.95);
+        hr {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+
+        .btn-act {
+            font-size: 28px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            margin-top: 25px;
+            padding: 15px 25px;
+            font-weight: bold;
+        }
+
+        #play-btn {
+            font-size: 45px;
+            padding: 25px 30px;
+            font-weight: bolder;
+        }
+        #loader {
+            height: 300px;
+            border: 1px solid rgba(0, 0, 0, 0);
+
+            p {
+                margin-top: 50%;
+                font-size: 23px;
+            }
+        }
+    }
+}
