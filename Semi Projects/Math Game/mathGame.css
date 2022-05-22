@@ -22,6 +22,7 @@ body{
 }
 .output{
     margin-left: 30px;
+    font-size:15px;
 }
 #equation{
     color: white;
