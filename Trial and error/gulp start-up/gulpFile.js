@@ -10,6 +10,7 @@ const files = {
     htmlPath: {
         mainHtml: 'src/*.html',
         pageHtml: 'src/pages/*.html',
+        inGAme: 'src/pages/in game/*.html',
     },
     sassPath: 'src/style/*.scss',
     jsPath: 'src/js/*.js',
@@ -18,6 +19,8 @@ const files = {
 // copy html files
 const copyMainHtml = () => src(files.htmlPath.mainHtml).pipe(dest('dist'));
 const copyPages = () => src(files.htmlPath.pageHtml).pipe(dest('dist/pages'));
+const copyInGAmePages = () =>
+    src(files.htmlPath.inGAme).pipe(dest('dist/pages/in game'));
 
 // compile sass to css and minify css
 const compileSass = () => {
@@ -35,6 +38,7 @@ const minifyJs = () => src(files.jsPath).pipe(uglify()).pipe(dest('dist/js'));
 const watchTask = () => {
     watch(files.htmlPath.mainHtml, copyMainHtml);
     watch(files.htmlPath.pageHtml, copyPages);
+    watch(files.htmlPath.inGAme, copyInGAmePages);
     watch(files.sassPath, compileSass);
     watch(files.jsPath, minifyJs);
 };
@@ -43,6 +47,7 @@ const watchTask = () => {
 exports.default = series(
     copyMainHtml,
     copyPages,
+    copyInGAmePages,
     compileSass,
     minifyJs,
     watchTask
